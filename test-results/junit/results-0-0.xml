@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="My Login application" timestamp="2024-11-14T21:58:30" time="2.174" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="My Login application"/>
+      <property name="capabilities" value="chrome.131_0_6778_70.mac"/>
+      <property name="file" value="file://./test/specs/auth.spec.ts"/>
+    </properties>
+    <testcase classname="chrome.131_0_6778_70.mac.My_Login_application" name="should login with valid credentials 1" time="2.168">
+      <failure message="ENOENT: no such file or directory, open '=rakib-passport.png'"/>
+      <system-out><![CDATA[
+COMMAND: GET /session/2023005be75e05e00bedd16ff8cdc49b/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/2023005be75e05e00bedd16ff8cdc49b - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: ENOENT: no such file or directory, open '=rakib-passport.png'
+    at Object.openSync (node:fs:596:3)
+    at Object.readFileSync (node:fs:464:35)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
