@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="2" failures="0" errors="0" skipped="0">
-  <testsuite name="My Login application" timestamp="2024-11-14T21:37:49" time="4.823" tests="2" failures="0" errors="0" skipped="0">
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Login tests" timestamp="2024-11-19T22:07:31" time="90.254" tests="1" failures="1" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="My Login application"/>
+      <property name="suiteName" value="Login tests"/>
       <property name="capabilities" value="chrome.131_0_6778_70.mac"/>
-      <property name="file" value="file://./test/specs/auth.spec.ts"/>
+      <property name="file" value="file://./test/specs/login.spec.ts"/>
     </properties>
-    <testcase classname="chrome.131_0_6778_70.mac.My_Login_application" name="should login with valid credentials 1" time="3.195">
+    <testcase classname="chrome.131_0_6778_70.mac.Login_tests" name="Product test" time="90.215">
+      <failure message="Timeout of 60000ms exceeded. The execution in the test &quot;Login tests Product test&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/voropa/Test_Automation/QAJ12_onl/WDIO_Saucedemo/test/specs/login.spec.ts)"/>
       <system-out><![CDATA[
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.67B4B236B1FB19938B924651997107BA.e.4/clear - {}
+COMMAND: POST /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.3/clear - {}
 RESULT: {}
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.67B4B236B1FB19938B924651997107BA.e.4/value - {"text":"tomsmith"}
-RESULT: {"text":"tomsmith"}
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.67B4B236B1FB19938B924651997107BA.e.6/clear - {}
+COMMAND: POST /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.3/value - {"text":"standard_user"}
+RESULT: {"text":"standard_user"}
+COMMAND: POST /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.5/clear - {}
 RESULT: {}
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.67B4B236B1FB19938B924651997107BA.e.6/value - {"text":"SuperSecretPassword!"}
-RESULT: {"text":"SuperSecretPassword!"}
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.67B4B236B1FB19938B924651997107BA.e.7/click - {}
+COMMAND: POST /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.5/value - {"text":"secret_sauce"}
+RESULT: {"text":"secret_sauce"}
+COMMAND: POST /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.6/click - {}
 RESULT: {}
-COMMAND: GET /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.2A2B0CD710D9682981389F5E343AEFAC.e.14/text - {}
+COMMAND: GET /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.36/text - {}
+COMMAND: GET /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.37/text - {}
+RESULT: {}
+COMMAND: GET /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.38/text - {}
+RESULT: {}
+COMMAND: GET /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.39/text - {}
+RESULT: {}
+COMMAND: GET /session/79bcdbc6cd0547f6ea29d004a228cb4b/element/f.CB2020FA56D752B20AB458035C6118B9.d.B3648618BD310AACE8A0BA7A22395FAA.e.40/text - {}
+RESULT: {}
+COMMAND: GET /session/79bcdbc6cd0547f6ea29d004a228cb4b/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/79bcdbc6cd0547f6ea29d004a228cb4b - {}
 RESULT: {}
 ]]></system-out>
-    </testcase>
-    <testcase classname="chrome.131_0_6778_70.mac.My_Login_application" name="should login with valid credentials 2" time="1.623">
-      <system-out><![CDATA[
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.055D217292FE3CC8298B336E1744074D.e.16/clear - {}
-RESULT: {}
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.055D217292FE3CC8298B336E1744074D.e.16/value - {"text":"tomsmith"}
-RESULT: {"text":"tomsmith"}
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.055D217292FE3CC8298B336E1744074D.e.18/clear - {}
-RESULT: {}
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.055D217292FE3CC8298B336E1744074D.e.18/value - {"text":"SuperSecretPassword!"}
-RESULT: {"text":"SuperSecretPassword!"}
-COMMAND: POST /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.055D217292FE3CC8298B336E1744074D.e.19/click - {}
-RESULT: {}
-COMMAND: GET /session/4504361929f3b4f324ac040af8ac1e9e/element/f.6F99F3FBDE5A655BDA59DF76A9F794B7.d.F4B0823FBA5914CD7319872550F31863.e.30/text - {}
-RESULT: {}
-COMMAND: DELETE /session/4504361929f3b4f324ac040af8ac1e9e - {}
-RESULT: {}
-]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "Login tests Product test" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/voropa/Test_Automation/QAJ12_onl/WDIO_Saucedemo/test/specs/login.spec.ts)
+    at createTimeoutError (/Users/voropa/Test_Automation/QAJ12_onl/WDIO_Saucedemo/node_modules/mocha/lib/errors.js:498:15)
+    at Runnable._timeoutError (/Users/voropa/Test_Automation/QAJ12_onl/WDIO_Saucedemo/node_modules/mocha/lib/runnable.js:429:10)
+    at Timeout.<anonymous> (/Users/voropa/Test_Automation/QAJ12_onl/WDIO_Saucedemo/node_modules/mocha/lib/runnable.js:244:24)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

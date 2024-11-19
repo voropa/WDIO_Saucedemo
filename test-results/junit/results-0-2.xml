@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="My Login application 2" timestamp="2024-11-19T22:07:31" time="4.234" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="My Login application 2"/>
+      <property name="capabilities" value="chrome.131_0_6778_70.mac"/>
+      <property name="file" value="file://./test/specs/registration.spec%20copy.ts"/>
+    </properties>
+    <testcase classname="chrome.131_0_6778_70.mac.My_Login_application_2" name="should login with valid credentials 1" time="4.231">
+      <failure message="expect(received).toBe(expected) // Object.is equality&#xA;&#xA;Expected: true&#xA;Received: false"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/72379e7590d2f61fdefe97c69b69151c/element/f.2BFF65AEAF00F3B8874DE15D01AA819B.d.DCAC4CDC6B5828B5EC251B09AEF1A6C1.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/72379e7590d2f61fdefe97c69b69151c/element/f.2BFF65AEAF00F3B8874DE15D01AA819B.d.DCAC4CDC6B5828B5EC251B09AEF1A6C1.e.5/value - {"text":"tomsmith"}
+RESULT: {"text":"tomsmith"}
+COMMAND: POST /session/72379e7590d2f61fdefe97c69b69151c/element/f.2BFF65AEAF00F3B8874DE15D01AA819B.d.DCAC4CDC6B5828B5EC251B09AEF1A6C1.e.7/clear - {}
+RESULT: {}
+COMMAND: POST /session/72379e7590d2f61fdefe97c69b69151c/element/f.2BFF65AEAF00F3B8874DE15D01AA819B.d.DCAC4CDC6B5828B5EC251B09AEF1A6C1.e.7/value - {"text":"SuperSecretPassword!"}
+RESULT: {"text":"SuperSecretPassword!"}
+COMMAND: POST /session/72379e7590d2f61fdefe97c69b69151c/element/f.2BFF65AEAF00F3B8874DE15D01AA819B.d.DCAC4CDC6B5828B5EC251B09AEF1A6C1.e.8/click - {}
+RESULT: {}
+COMMAND: GET /session/72379e7590d2f61fdefe97c69b69151c/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/72379e7590d2f61fdefe97c69b69151c - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: true
+Received: false
+    at Context.<anonymous> (/Users/voropa/Test_Automation/QAJ12_onl/WDIO_Saucedemo/test/specs/registration.spec copy.ts:15:64)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -4,6 +4,7 @@ import * as path from 'path';
 import { DOWNLOADS_DIR } from '../../wdio.conf';
 
 describe('My Login application', () => {
+
     it('should login with valid credentials 1', async () => {
         await browser.url(`https://the-internet.herokuapp.com/download`)
         await $('a[href="downloads/rakib-passport.png"]').click();
@@ -16,6 +17,12 @@ describe('My Login application', () => {
         console.log(filePath);
 
         expect(fs.existsSync(filePath)).toBe(true);
+
+        // 400 - single browser 5h - chrome + 5 h safari
+        // 2 worker
+        // 400 - single browser 3 thread - 1.5h chrome
+        // 400 - single browser 3 thread - 1.5h safari
+
     });
 })
 
